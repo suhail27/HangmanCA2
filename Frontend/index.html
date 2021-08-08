@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./styling/styles.css">
+    <script src="index.js" type="text/javascript"></script>
+    <script src="./logic/hangman.js" text="/javascript"></script>
+</head>
+
+<body>
+    <div class="heading-container">
+        <h1 style="text-align:center">Hangman Game</h1>
+        <div id="scoreitems">
+            <div id="playerchart">Leaderboard:
+                <br>
+
+            </div>
+            <button id="getresults">Scores</button>
+        </div>
+
+
+        <label for="playername">Enter your name:</label>
+        <input type="text" id="playername">
+
+        <label for="playerscore">Enter your name:</label>
+        <input type="number" max="10" min="0" id="playerscore"> <button id="submitdetails">Submit</button>
+
+        <p style="text-align:center; color: #000;">Use the alphabet below to guess the word, or click hint to get a
+            clue. </p>
+    </div>
+    <div class="wrapper">
+        <div id="buttons">
+        </div>
+        <p id="catagoryName"></p>
+        <div id="hold">
+        </div>
+        <p id="mylives"></p>
+        <p id="clue">Clue -</p>
+        <canvas id="stickman"></canvas>
+        <div class="container">
+            <h2 id="hintheader">Hints: Only 1 definition and vowel hint is available for each game!</h2>
+            <button id="hint">Definition</button>
+            <button id="vowelsHint">Vowels</button>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+</body>
+
+</html>
