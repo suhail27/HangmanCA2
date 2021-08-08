@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded',function(){
     var playername = document.getElementById('playername').value
     var score = document.getElementById('playerscore').value
     
-    fetch(`http://localhost:5050/submitscore?playername=${playername}&score=${score}`,{method:'POST'})
+    fetch(`https://hangmanca3.herokuapp.com/submitscore?playername=${playername}&score=${score}`,{method:'POST'})
     .then(function(response){
       return response.json()
     })
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded',function(){
 
 
   getscoresofgame.addEventListener('click',function(){
-    fetch('http://localhost:5050/scores',{method:'GET'})
+    fetch('https://hangmanca3.herokuapp.com/scores',{method:'GET'})
     .then(function(response){
       return response.json()
     })
