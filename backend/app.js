@@ -47,7 +47,7 @@ app.get('/scores',function(req,res){
 
 
 
-
-app.listen(5050,function(){
-    console.log("Yepee listening to port 5050!!")
+const port = process.env.PORT
+app.listen(port,function(){
+    console.log("Yepee listening to port" + port)
 })
