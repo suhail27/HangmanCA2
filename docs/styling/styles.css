@@ -64,7 +64,7 @@ p {
   border: solid 1px #fff;
 }
 #alphabet li:hover {
-  background: #993bc5;
+  background: blue;
   border: solid 1px #fff;
   color: #fff;
 }
