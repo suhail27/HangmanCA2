@@ -2,7 +2,7 @@
 const express = require('express');
 const cors = require('cors')
 const fs = require('fs');
-var scoreOfplayers = fs.readFileSync('/storage.json')
+var scoreOfplayers = fs.readFileSync('./storage.json')
 var final = JSON.parse(scoreOfplayers)
 
 
@@ -23,7 +23,7 @@ app.post('/submitscore',function(req,res){
     const score = Number(req.query.score)
     final[playername] = score
     var finalscore = JSON.stringify(final,null,2)
-    fs.writeFile('/storage.json',finalscore,update);
+    fs.writeFile('./storage.json',finalscore,update);
 
     function update(){
         console.log('Successfully submitted')
